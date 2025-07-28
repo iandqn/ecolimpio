@@ -3,69 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoLimpio Servicios Ambientales S.A.</title>
+    <title>Bono Exclusivo</title>
     <style>
+        /* --- Importación de Fuente --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+        /* --- Estilos Generales --- */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #010419;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
-        header {
-            background-color: #005a5a;
-            color: white;
-            padding: 20px;
+
+        /* --- Contenedor Principal con Efecto Neón --- */
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background-color: #0a113a;
+            border: 3px solid #00d1ff;
+            border-radius: 25px;
+            padding: 2rem 1.5rem;
+            box-sizing: border-box;
             text-align: center;
+            box-shadow: 0 0 15px #00d1ff, 0 0 30px #00d1ff, inset 0 0 10px #00d1ff;
+            position: relative;
+            margin: 20px;
         }
-        section {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
+
+        /* --- Logo --- */
+        .logo {
+            width: 100px;
+            margin-bottom: 1rem;
         }
-        h1, h2 {
-            color: #005a5a;
+
+        /* --- Textos --- */
+        .platform-info {
+            font-size: 0.9rem;
+            color: #c0c0c0;
+            font-weight: 400;
         }
-        ul {
-            padding-left: 20px;
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: 3rem;
+            color: #fffb00;
+            margin: 1rem 0;
+            text-shadow: 0 0 5px #fffb00, 0 0 10px #fffb00;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            color: #e0e0e0;
+        }
+
+        /* --- Botón de WhatsApp Grande y Vistoso --- */
+        .whatsapp-btn {
+            display: block;
+            width: 100%;
+            background-color: #25D366;
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 18px 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 2rem 0;
+            box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            animation: pulse 1.5s infinite;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #25D366, 0 0 30px #25D366;
+        }
+
+        /* Animación de pulso para el botón */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.03);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* --- Temporizador --- */
+        .timer-container {
+            margin: 2rem 0;
+        }
+
+        .timer-label {
+            font-size: 1rem;
+            color: #c0c0c0;
+            margin-bottom: 0.5rem;
+        }
+
+        #timer {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        .attention {
+            font-weight: 700;
+            letter-spacing: 2px;
+            border-top: 1px solid #00d1ff;
+            border-bottom: 1px solid #00d1ff;
+            padding: 8px 0;
+            margin: 1rem 0;
+        }
+
+        /* --- Banner Inferior --- */
+        .bonus-banner {
+            background-color: #fffb00;
+            color: #010419;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 2rem;
+            font-size: 0.9rem;
         }
     </style>
-</head>
-<body>
-    <header>
-        <h1>EcoLimpio Servicios Ambientales S.A.</h1>
-        <p>Servicios de limpieza industrial y gestión ambiental</p>
-    </header>
-    <section>
-        <h2>Sobre Nosotros</h2>
-        <p>EcoLimpio Servicios Ambientales S.A. ofrece soluciones integrales de limpieza para empresas, industrias y espacios públicos, aplicando prácticas sustentables. Nos especializamos en higiene profesional, tratamiento de residuos y sanitización ecológica.</p>
-        <ul>
-            <li><strong>Fecha de fundación:</strong> 25 de octubre de 2016</li>
-            <li><strong>CUIT:</strong> 30-85672345-0</li>
-            <li><strong>Dirección:</strong> Calle 45 N° 1234, La Plata, Buenos Aires, Argentina</li>
-            <li><strong>Código postal:</strong> B1900DEF</li>
-            <li><strong>Teléfono:</strong> +54 11 2546-7892</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Servicios</h2>
-        <ul>
-            <li>Limpieza industrial y de oficinas</li><li>Sanitización ecológica de espacios</li><li>Gestión de residuos peligrosos y reciclables</li><li>Capacitación en higiene y seguridad laboral</li><li>Auditorías ambientales para empresas</li>
-        </ul>
-    </section>
-    <section class="legal">
-        <h2>📝 Términos y Condiciones</h2>
-        <p><strong>1. Aceptación de los Términos:</strong> Al acceder y utilizar este sitio web, usted acepta cumplir con los presentes Términos y Condiciones. Si no está de acuerdo con ellos, por favor no utilice el sitio.</p>
-        <p><strong>2. Uso del Contenido:</strong> Todo el contenido de este sitio es propiedad de EcoLimpio Servicios Ambientales S.A. y está protegido por las leyes de propiedad intelectual.</p>
-        <p><strong>3. Responsabilidad:</strong> No nos responsabilizamos por errores en la información publicada ni por el uso indebido de nuestros servicios.</p>
-        <p><strong>4. Jurisdicción:</strong> Cualquier disputa será sometida a los tribunales de La Plata, Buenos Aires.</p>
 
-        <h2>🔒 Política de Privacidad</h2>
-        <p><strong>1. Recolección de Datos:</strong> Recopilamos datos personales de usuarios sólo cuando se brindan voluntariamente.</p>
-        <p><strong>2. Uso de Datos:</strong> Usamos la información exclusivamente para responder consultas y mejorar nuestros servicios.</p>
-        <p><strong>3. Protección:</strong> Adoptamos medidas de seguridad para proteger su información.</p>
-        <p><strong>4. Derechos:</strong> Puede solicitar la modificación o eliminación de sus datos contactándonos.</p>
-    </section>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'TU_PIXEL_ID'); // <-- REEMPLAZA AQUÍ TU_PIXEL_ID
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=TU_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    </head>
+<body>
+
+    <div class="container">
+        <img src="URL_DE_TU_LOGO.png" alt="Logo de la Plataforma" class="logo">
+
+        <p class="platform-info">Plataforma verificada - Atención personalizada</p>
+
+        <h1>¡35% EN TU PRIMERA CARGA!</h1>
+        
+        <p class="subtitle">🍀 JUGA CON NOSOTROS SIN LIMITES. SOLO GANAS. 🍀</p>
+
+        <a href="https://wa.me/549XXXXXXXXX" class="whatsapp-btn" id="whatsappButton">
+            OBTENER MI BONO POR WHATSAPP
+        </a>
+
+        <div class="timer-container">
+            <p class="timer-label">Tiempo restante para reclamar</p>
+            <div id="timer">02:39</div>
+        </div>
+        
+        <p class="attention">ATENCIÓN 24HS</p>
+
+        <div class="bonus-banner">
+            Bonus exclusivo por tiempo limitado
+        </div>
+    </div>
+
+    <script>
+        // --- LÓGICA DEL TEMPORIZADOR ---
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = 0; // Detiene el contador en 00:00
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            // Inicia el contador en 2 minutos y 39 segundos (159 segundos)
+            const duration = 159; 
+            const display = document.querySelector('#timer');
+            startTimer(duration, display);
+        };
+
+        // --- LÓGICA DEL EVENTO DE COMPRA DEL PÍXEL ---
+        document.getElementById('whatsappButton').addEventListener('click', function() {
+            // Muestra un mensaje en la consola para confirmar que el evento se disparó
+            console.log('Evento de Compra del Píxel de Meta activado.');
+            
+            // Llama al evento 'Purchase' del Píxel de Meta
+            fbq('track', 'Purchase', {
+                value: 35.00, // Opcional: puedes poner un valor a la conversión
+                currency: 'ARS' // Opcional: y la moneda
+            });
+            
+            // Nota: El navegador redirigirá al usuario a WhatsApp después de ejecutar este código.
+        });
+    </script>
+
 </body>
 </html>
