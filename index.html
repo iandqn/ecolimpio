@@ -56,7 +56,8 @@
             font-size: 3rem;
             color: #fffb00;
             margin: 1rem 0;
-            text-shadow: 0 0 5px #fffb00, 0 0 10px #fffb00;
+            /* CAMBIO: Efecto de neón más sutil para mayor legibilidad */
+            text-shadow: 0 0 8px rgba(255, 251, 0, 0.7);
             line-height: 1.2;
         }
 
@@ -142,6 +143,8 @@
         }
     </style>
 
+    <!-- Píxel de Meta - ¡IMPORTANTE! -->
+    <!-- Reemplaza 'TU_PIXEL_ID' con tu ID de Píxel real -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -151,16 +154,19 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', 'TU_PIXEL_ID'); // <-- REEMPLAZA AQUÍ TU_PIXEL_ID
+        fbq('init', '724739946679939'); // <-- REEMPLAZA AQUÍ TU_PIXEL_ID
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=TU_PIXEL_ID&ev=PageView&noscript=1"
+      src="https://www.facebook.com/tr?id=724739946679939&ev=PageView&noscript=1"
     /></noscript>
-    </head>
+    <!-- Fin del Píxel de Meta -->
+
+</head>
 <body>
 
     <div class="container">
+        <!-- Logo -->
         <img src="URL_DE_TU_LOGO.png" alt="Logo de la Plataforma" class="logo">
 
         <p class="platform-info">Plataforma verificada - Atención personalizada</p>
@@ -169,10 +175,13 @@
         
         <p class="subtitle">🍀 JUGA CON NOSOTROS SIN LIMITES. SOLO GANAS. 🍀</p>
 
-        <a href="https://wa.me/549XXXXXXXXX" class="whatsapp-btn" id="whatsappButton">
+        <!-- Botón de WhatsApp con evento de Píxel -->
+        <!-- Reemplaza 549XXXXXXXXX por tu número completo sin el '+' -->
+        <a href="https://wa.me/5491121932800?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%21" class="whatsapp-btn" id="whatsappButton">
             OBTENER MI BONO POR WHATSAPP
         </a>
 
+        <!-- Temporizador -->
         <div class="timer-container">
             <p class="timer-label">Tiempo restante para reclamar</p>
             <div id="timer">02:39</div>
@@ -180,6 +189,7 @@
         
         <p class="attention">ATENCIÓN 24HS</p>
 
+        <!-- Banner inferior -->
         <div class="bonus-banner">
             Bonus exclusivo por tiempo limitado
         </div>
@@ -228,3 +238,4 @@
 
 </body>
 </html>
+
